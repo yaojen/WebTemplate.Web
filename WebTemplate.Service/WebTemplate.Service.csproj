@@ -41,7 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interface\IService.cs" />
+    <Compile Include="Misc\IResult.cs" />
+    <Compile Include="Misc\Result.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\GenericService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebTemplate.Models\WebTemplate.Models.csproj">
+      <Project>{e890470b-a148-4a15-8a57-9934cd0d151b}</Project>
+      <Name>WebTemplate.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
